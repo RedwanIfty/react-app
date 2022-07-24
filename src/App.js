@@ -17,6 +17,10 @@ function App() {
         >
           Learn React
         </a>
+      <div className="container">
+        <h1>Hello, World</h1>
+        <p>THIS IS MY FIRST RACTJS</p>
+      </div>
       </header>
     </div>
   );
