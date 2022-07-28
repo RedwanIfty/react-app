@@ -1,10 +1,14 @@
-import Form from "./Form";
-import Par from "./Par";
+
+import Department from "./Department";
+import LeftMenu from './LeftMenu';
+import Students from "./Students";
 const Main=()=>{
+    
     return(
-        <div>
-            <Form/>
-            <Par/>
+        <div> 
+            <LeftMenu/>           
+            <Department/>
+            <Students/>
         </div>
     );
 }

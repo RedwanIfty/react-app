@@ -1,8 +1,12 @@
 const Form=()=>{
     return(
         <div>
-            <input type="text"/><br></br>
-            <input type="number"/>
+            <fieldset>
+                Name:
+                <input type="text"/><br></br>
+                Number:
+                <input type="number"/>
+            </fieldset>
         </div>
     );
 }
