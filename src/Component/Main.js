@@ -1,19 +1,21 @@
-
-import Department from "./Department";
-import Form from "./Form";
-import LeftMenu from './LeftMenu';
-import PassFunc from "./PassFunc";
-import StudentDepartment from "./StudentDepartment";
-import Students from "./Students";
-import User from "./User";
+import FileUpload from "./FileUpload";
+import View from "./View";
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Delete from "./Delete";
 const Main=()=>{
     
     return(
         <div> 
-            {/* <Form/>
-            <LeftMenu/>           
-            <StudentDepartment/> */}
-            <PassFunc/>
+            {/* <LeftMenu/>           
+            <StudentDepartment/>
+            <PassFunc/> */}
+            <BrowserRouter>
+            <FileUpload/>
+            <View/>
+                <Routes>
+                    <Route path="/file/delete/:id" element={<Delete/>} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }
