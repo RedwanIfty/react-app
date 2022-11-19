@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-const MenuItem=({name,value})=>{
-    console.log({name,value});
+const MenuItem=({url,value})=>{
+    console.log({url,value});
     return (
 
-        <Link to={name}>{value}</Link>
+        <Link to={url}>{value}</Link>
     )
 }
 export default MenuItem;

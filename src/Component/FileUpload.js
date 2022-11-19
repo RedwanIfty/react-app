@@ -27,7 +27,7 @@ const FileUpload=()=>{
     return(
         <div>
             <form onSubmit={upload}>
-                <input type="file" onChange={(e)=>{setFile(e.target.files[0])}} ></input><br/><span>{errs.files? errs.file[0]:''}</span><br/>
+                <input type="file" onChange={(e)=>{setFile(e.target.files[0])}} ></input><br/><span>{errs.file? errs.file[0]:''}</span><br/>
                 Name:<input value={name} onChange={(e)=>{setName(e.target.value)}} type="text" name='name'/><span>{errs.name? errs.name[0]:''}</span><br/>
                 Address:<input value={address} onChange={(e)=>{setAddress(e.target.value)}} type="text" name='address'/><span>{errs.address? errs.address[0]:''}</span><br/>
                 <input type="submit" value="Create"/>

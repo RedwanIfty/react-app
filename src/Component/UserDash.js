@@ -3,7 +3,7 @@ import { useReactToPrint } from 'react-to-print';
 import {useState,useEffect} from 'react';
 import axiosConfig from './axiosConfig';
 import {Link} from 'react-router-dom';
-const View=()=>{
+const UserDash=()=>{
     const[create,setCreate] = useState([]);
     const componentRef=useRef();
     //debugger;
@@ -33,8 +33,7 @@ const View=()=>{
                     <div key={st.id}>
                     <li>{st.name}</li>
                     <>{st.address}</>
-                    <Link to={`/file/delete/${st.id}`}>delete</Link>
-                    <img src={`http://localhost:8000/storage/pro_pics/${st.pro_pic}`} width={100} height={100} alt='no image found'/>
+                    <img src={`http://localhost:8000/storage/pro_pics/${st.pro_pic}`} width={100} height={100}/>
                     </div>
                     )
                 }
@@ -44,4 +43,4 @@ const View=()=>{
         </div>
     )
 }
-export default View;
+export default UserDash;

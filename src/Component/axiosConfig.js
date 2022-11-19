@@ -4,7 +4,10 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use((config)=>{
-    config.headers.common["Authorization"] = localStorage.getItem('_authToken');
+    config.headers.common["AuthorizationUser"] = localStorage.getItem('_authToken');
+    debugger
+    config.headers.common["Authorization"]=localStorage.getItem('user');
+    debugger
     return config;
 },(err)=>{});
 

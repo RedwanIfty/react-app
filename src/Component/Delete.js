@@ -6,11 +6,12 @@ const Delete=()=>{
     const{id} = useParams();
     const[errs,setErrs]=useState("");
     useEffect(()=>{
-        axiosConfig.post("file/delete/"+id).
+        axiosConfig.post("delete/"+id).
         then((succ)=>{
+            debugger
             //setMsg(succ.data.msg);
-            window.location.href="";
-        },(err)=>{
+            window.location.href="/add-beneficiary";
+        },(err)=>{ 
             window.location.href="/";// setErrs(errs);
             //debugger;
         })
